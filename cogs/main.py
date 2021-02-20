@@ -1,4 +1,4 @@
-import discord 
+import discord
 from discord.ext import commands
 
 
@@ -13,7 +13,7 @@ class Main(commands.Cog):
     async def git(self, ctx):
         await ctx.send('https://github.com/MrMisterBean/BeanBOT')
 
-    # returns bot latency (ping) in milliseconds 
+    # returns bot latency (ping) in milliseconds
     @commands.command()
     async def ping(self, ctx):
         await ctx.send(f'Pong! {round(self.client.latency * 1000)}ms')
